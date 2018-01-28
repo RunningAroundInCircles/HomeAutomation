@@ -1,0 +1,71 @@
+main
+{
+    display: flex;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+}
+nav
+{
+    display: flex;
+    width: 200px;
+    height: 100%;
+    flex-flow: column nowrap;
+    background-color: #1a1c1e;
+}
+
+.navList
+{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.navList a
+{
+    border-bottom: 1px solid #7e8589;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    padding: 16px;
+    color: #7e8589;
+    text-decoration: none;
+}
+
+.navList a:hover
+{
+    color: #c66a19;
+    background-color: #47494c;
+}
+
+.navList a.active
+{
+    background-color: #47494c;
+    color: #19c63e;
+}
+
+.navButton
+{
+    display: flex;
+    cursor: pointer;
+    align-self: flex-end;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.navButton div
+{
+    width: 40px;
+    height: 6px;
+    flex-basis: auto;
+    background-color: #7e8589;
+    margin: 3px;
+}
+
+.navButton:hover div
+{
+    background-color: #c66a19;
+}
