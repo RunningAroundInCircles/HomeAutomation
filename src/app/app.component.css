@@ -22,41 +22,92 @@ nav
     overflow: hidden;
 }
 
-
-.navList a
+.dashBordBtn
 {
-    border-bottom: 1px solid #7e8589;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 24px;
-    padding: 16px;
-    color: #7e8589;
-    text-decoration: none;
+    border-top: 1px solid #7e8589;
 }
 
-.navList a:hover
+.navItem
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+    margin: 0;
+    border-bottom: 1px solid #7e8589;
+}
+
+.navItem a
+{
+    flex: 2 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    color: #7e8589;
+    text-decoration: none;
+    margin: 0;
+}
+
+.navItem div
+{
+    display: flex;
+    flex: 1 0 0;
+    height: 50px;
+    width: 50px;
+}
+
+.navItem span
+{
+    font-size: 30px;
+    color: #7e8589;
+    margin: 0;
+}
+
+.navItem:hover
 {
     color: #c66a19;
     background-color: #47494c;
 }
 
-.navList a.active
+.navItem.active
 {
     background-color: #47494c;
     color: #19c63e;
 }
 
-.navButton
+
+.menuTextBtn
+{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.menuTextBtn h5
+{
+    flex: 2 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    color:#7e8589;
+    margin: 0;
+}
+
+.menuButton
 {
     display: flex;
-    cursor: pointer;
-    align-self: flex-end;
+    flex: 1 0 0;
+    align-self: flex-end center;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     width: 50px;
     height: 50px;
 }
-.navButton div
+.menuButton div
 {
     width: 40px;
     height: 6px;
@@ -65,7 +116,9 @@ nav
     margin: 3px;
 }
 
-.navButton:hover div
+.menuButton:hover div
 {
     background-color: #c66a19;
 }
+
+
