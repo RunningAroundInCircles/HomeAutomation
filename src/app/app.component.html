@@ -1,6 +1,6 @@
 <!--  -->
 <main>
-    <nav>
+    <nav> <!-- Navigation skal laves helt om i forhold til at fungere ordenligt -->
         <div class="navList">
             <div class="menuTextBtn">
                 <h5>Menu</h5>
@@ -10,22 +10,29 @@
                     <div></div>
                 </div>
             </div>
-            <div class="navItem">
-                <a class="dashBoardBtn" href="#">Dashboard</a>
-                <div class="icon"> <!--Mangler arbejde-->
-                    <span class="fas fa-home"></span>
+            <div class="dashBordBtn navItem">
+                <a routerLink="/dashbord" routerLinkActive="active">Dashboard</a>
+                <div class="icon">
+                    <i class="fa fa-home"></i>
                 </div>
             </div>
             <div class="navItem">
-                <a class="" href="#">Settings</a>
-                <span class="fas fa-cog"></span>
+                <a routerLink="/settings" routerLinkActive="active">Settings</a>
+                <div class="icon"> 
+                    <i class="fa fa-cog"></i>
+                </div>
             </div>
             <div class="navItem">
-                <a class="" href="#">About</a>
-                <span class="fas fa-question-circle"></span>
+                <a>About</a>
+                <div class="icon"> 
+                    <i class="fa fa-question-circle"></i>
+                </div> 
             </div>
         </div>
     </nav>
 
+    <div>
+        <router-outlet></router-outlet>
+    </div>
 
 </main>
