@@ -5,6 +5,7 @@ main
     width: auto;
     margin: 0;
 }
+
 nav
 {
     display: flex;
@@ -12,87 +13,59 @@ nav
     height: 100%;
     flex-flow: column nowrap;
     background-color: #1a1c1e;
-}
-
-.navList
-{
-    display: flex;
-    flex-flow: column nowrap;
     overflow: hidden;
 }
 
-.dashBordBtn
+.topBtnBorder
 {
     border-top: 1px solid #7e8589;
 }
 
-.navItem
+.navButton
 {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
-    height: 61px;
-    margin: 0;
-    cursor: pointer;
+    justify-content: space-between;
+    color: #7e8589;
     border-bottom: 1px solid #7e8589;
+    height: 61px;
+    cursor: pointer;
 }
 
-.navItem a
+.navButton span
 {
     flex: 2 0 auto;
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
-    color: #7e8589;
     text-decoration: none;
-    margin: 0;
+    margin-left: 5px;
 }
 
-
-.icon
+.navButton i
 {
-    display: flex;
-    flex: 0 0 1;
-    
+    flex: 0 0 auto;
+    font-size: 37px;
+    margin-right: 11px;
 }
 
-.icon i
-{
-    font-size: 40px;
-    margin-right: 5px;
-    color: #7e8589;
-}
-
-.navItem:hover
+.navButton:hover
 {
     background-color: #47494c;
     color: #c66a19;
 }
 
-/* .navItem:hover a
-{
-    color: #c66a19;
-}
-
-.navItem:hover i
-{
-    color: #c66a19;
-} */
-
-
-.navItem:active
+.navButton.active
 {
     background-color: #47494c;
-    
-}
-.navItem:active
-{
     color: #19c63e;
+    outline: none;
 }
 
-.navItem i.active
+.navButton:active
 {
-    color: #19c63e;
+    outline: none;
 }
 
 .menuTextBtn
@@ -101,7 +74,7 @@ nav
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+
 }
 
 .menuTextBtn h5
@@ -111,7 +84,7 @@ nav
     font-size: 24px;
     font-weight: normal;
     color:#7e8589;
-    margin: 0;
+    margin: 0 0 0 5px;
 }
 
 .menuButton
@@ -125,6 +98,7 @@ nav
     cursor: pointer;
     width: 50px;
     height: 50px;
+    margin-right: 5px;
 }
 .menuButton div
 {

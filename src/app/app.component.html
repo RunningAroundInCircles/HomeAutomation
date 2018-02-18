@@ -1,33 +1,25 @@
 <!--  -->
 <main>
     <nav> <!-- Navigation skal laves helt om i forhold til at fungere ordenligt -->
-        <div class="navList">
-            <div class="menuTextBtn">
-                <h5>Menu</h5>
-                <div class="menuButton">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+        <div class="menuTextBtn">
+            <h5>Menu</h5>
+            <div class="menuButton">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="dashBordBtn navItem">
-                <a routerLink="/dashbord" routerLinkActive="active">Dashboard</a>
-                <div class="icon">
-                    <i class="fa fa-home"></i>
-                </div>
-            </div>
-            <div class="navItem">
-                <a routerLink="/settings" routerLinkActive="active">Settings</a>
-                <div class="icon"> 
-                    <i class="fa fa-cog"></i>
-                </div>
-            </div>
-            <div class="navItem">
-                <a>About</a>
-                <div class="icon"> 
-                    <i class="fa fa-question-circle"></i>
-                </div> 
-            </div>
+        </div>
+        <div class="topBtnBorder navButton" routerLink="/dashbord" routerLinkActive="active">
+            <span>Dashboard</span>
+            <i class="fa fa-home"></i>
+        </div>
+        <div class="navButton" routerLink="/settings" routerLinkActive="active">
+            <span>Settings</span>
+            <i class="fa fa-cog"></i>
+        </div>
+        <div class="navButton">
+            <span>About</span>
+            <i class="fa fa-question-circle"></i>
         </div>
     </nav>
 
