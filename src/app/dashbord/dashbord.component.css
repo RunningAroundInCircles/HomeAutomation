@@ -1,0 +1,16 @@
+main
+{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.container{
+    display: flex;
+    flex: 1 0 1;
+    height: 300px;
+    width: 300px;
+    background-color:orange;
+}

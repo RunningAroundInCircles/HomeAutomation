@@ -1,16 +1,16 @@
 main
 {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
-    overflow-x: hidden;
 }
 
 nav
 {
     display: flex;
+    flex-shrink: 0;
     flex-flow: column nowrap;
-    height: 100%;
+    min-height: 100%;
     width: 200px;
     background-color: #1a1c1e;
 }
@@ -31,7 +31,7 @@ nav
 
 .navButton span /*Text*/
 {
-    flex: 2 0 auto;
+    flex: 2 0 0;
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     text-decoration: none;
@@ -40,7 +40,7 @@ nav
 
 .navButton i /*Icon*/
 {
-    flex: 0 0 auto;
+    flex: 0 0 0;
     font-size: 37px;
     margin-right: 11px;
 }
@@ -119,8 +119,5 @@ nav
 /*#endregion*/
 
 /*#region - Router outlet*/
-.outlet /*Wrapper for outlet*/
-{
-    margin-left: 5px;
-}
+
 /*#endregion*/
