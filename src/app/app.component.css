@@ -3,25 +3,20 @@ main
     display: flex;
     height: 100vh;
     width: auto;
-    margin: 0;
+    overflow-x: hidden;
 }
 
 nav
 {
     display: flex;
-    width: 200px;
-    height: 100%;
     flex-flow: column nowrap;
+    height: 100%;
+    width: 200px;
     background-color: #1a1c1e;
-    overflow: hidden;
 }
 
-.topBtnBorder
-{
-    border-top: 1px solid #7e8589;
-}
-
-.navButton
+/*#region - Class for eatch navigation button w/text and icon*/ 
+.navButton /*Wrapper for eatch button*/
 {
     width: 100%;
     display: flex;
@@ -34,7 +29,7 @@ nav
     cursor: pointer;
 }
 
-.navButton span
+.navButton span /*Text*/
 {
     flex: 2 0 auto;
     font-family: 'Ubuntu', sans-serif;
@@ -43,41 +38,49 @@ nav
     margin-left: 5px;
 }
 
-.navButton i
+.navButton i /*Icon*/
 {
     flex: 0 0 auto;
     font-size: 37px;
     margin-right: 11px;
 }
 
-.navButton:hover
+.navButton:hover /*Hover color for button text+icon+bg*/
 {
     background-color: #47494c;
     color: #c66a19;
 }
 
-.navButton.active
+.navButton.active /*Active button text+icon+bg color*/
 {
     background-color: #47494c;
     color: #19c63e;
     outline: none;
 }
 
-.navButton:active
+.navButton:active /*Removing outline on active nav button*/
 {
     outline: none;
 }
 
-.menuTextBtn
+.topBtnBorder /*Add top border, for the top nav button*/
+{
+    border-top: 1px solid #7e8589;
+}
+
+/*#endregion*/
+
+/*#region - Menu text and hamburger button div*/ 
+.menuTextBtn /*div wrapper*/
 {
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-
+    overflow-x: hidden;
 }
 
-.menuTextBtn h5
+.menuTextBtn h5 /*Menu text*/
 {
     flex: 2 0 auto;
     font-family: 'Ubuntu', sans-serif;
@@ -87,7 +90,7 @@ nav
     margin: 0 0 0 5px;
 }
 
-.menuButton
+.menuButton /*Hamburger button wrapper*/
 {
     display: flex;
     flex: 1 0 0;
@@ -100,7 +103,7 @@ nav
     height: 50px;
     margin-right: 5px;
 }
-.menuButton div
+.menuButton div /*Bars of the hamburger*/
 {
     width: 40px;
     height: 6px;
@@ -109,9 +112,15 @@ nav
     margin: 3px;
 }
 
-.menuButton:hover div
+.menuButton:hover div /*Hover color Hamburger button*/ 
 {
     background-color: #c66a19;
 }
+/*#endregion*/
 
-
+/*#region - Router outlet*/
+.outlet /*Wrapper for outlet*/
+{
+    margin-left: 5px;
+}
+/*#endregion*/
