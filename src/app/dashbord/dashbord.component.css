@@ -1,17 +1,23 @@
 main
 {
-    min-height: 100vh;
+    height: 100vh;
+    min-width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 .container{
     display: flex;
-    flex: 1 1 1;
+    /* flex: 1 1 1; */
     height: 300px;
     width: 500px;
     background-color:orange;
     margin: 0.5rem 0;
+}
+
+.container button
+{
+    flex: 1 0 1;
+    height: 50px;
 }

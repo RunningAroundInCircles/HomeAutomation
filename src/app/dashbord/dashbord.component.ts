@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Animation } from '../animation/animation';
 
 @Component({
   selector: 'app-dashbord',
@@ -9,8 +10,7 @@ export class DashbordComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   // private reloadPage()
   // {

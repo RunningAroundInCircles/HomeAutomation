@@ -8,11 +8,6 @@ import { Animation } from './animation/animation';
   animations:[Animation.navTrigger]
 })
 
-// @Directive
-// ({
-//   selector: '[clickOutside]'
-// })
-
 export class AppComponent {
   
   ///State of side navigation bar
@@ -20,20 +15,7 @@ export class AppComponent {
   private expandedState = 'collapsed';
 
 
-  constructor() {} //private _elementRef : ElementRef
-
-  //  ///Event when side navigation is toggled.
-  //  @Output() private clickOutside = new EventEmitter();
-
-  //   ///Listner for clicks on the page when side navigation bar is active, for closing it if you just click outside of the menu.
-  // @HostListener('document:click', ['$event.target']) public onClick(targetElement)
-  // {
-  //   const clickedInside = this._elementRef.nativeElement.contains(targetElement);
-  //   if (!clickedInside && this.expanded === true)
-  //   {
-  //     this.toggleNav();
-  //   }
-  // }
+  constructor() {}
 
   ///Method to toggle side navitagion bar
   private toggleNav()

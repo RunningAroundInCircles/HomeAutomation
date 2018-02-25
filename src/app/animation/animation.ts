@@ -8,5 +8,5 @@ export const Animation =
         state('collapsed', style({marginLeft: '-145px'})),
         transition('collapsed => expanded', animate('200ms ease-in')),
         transition('expanded => collapsed', animate('200ms ease-out'))
-    ]),
+    ])
 }
